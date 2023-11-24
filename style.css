@@ -3,15 +3,50 @@
   padding: 0;
   box-sizing: border-box;
 }
-img {
+img,
+video {
   width: 100%;
   height: auto;
   display: block;
 }
-
-h1 {
-  font-family: "Hind";
+video {
+  padding: 5%;
+}
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  padding: 5%;
+}
+body {
+  background-color: rgb(52 73 55);
+  object-fit: cover;
 }
 
-font-family: "Lora", serif;
-font-family: "Varela", sans-serif;
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 3.6%;
+}
+
+article {
+  padding: 3%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.tall,
+.wide {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Varela", sans-serif;
+  color: rgb(255 255 255);
+}
+
+h3 {
+  font-family: "Hind", sans-serif;
+  color: rgb(143 195 148);
+}
