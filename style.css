@@ -21,6 +21,7 @@ iframe {
 body {
   background-color: rgb(52 73 55);
   object-fit: cover;
+  grid-template-columns: 1fr 1fr;
 }
 
 header {
@@ -29,7 +30,7 @@ header {
   margin: 3.6%;
 }
 
-article {
+figure {
   padding: 3%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -49,4 +50,17 @@ h1 {
 h3 {
   font-family: "Hind", sans-serif;
   color: rgb(143 195 148);
+}
+
+ul {
+  font-family: "Varela", sans-serif;
+  font-size: 0.9rem;
+  padding-left: 6%;
+  color: rgb(175, 206, 175);
+}
+
+.tekst {
+  padding-left: 10%;
+  padding-bottom: 5%;
+  background-color: rgb(13, 49, 20);
 }
